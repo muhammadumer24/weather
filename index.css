@@ -1,0 +1,102 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+    background-color: rgba(0, 149, 255, 0.8);
+    color: white;
+    padding:1em 0;
+    width: 96%;
+    margin: .5em auto;
+    border-radius: 50px;
+    box-shadow: 3px 3px 4px .5px rgba(0, 0, 0, 0.552);
+    transition: all ease-in-out .3s;
+}
+h1{
+    font-size: 1.5rem;
+    text-align: center;
+}
+header:hover{
+    /* animation: .75s 1 hei; */
+    box-shadow: 5px 5px 6px .25px rgba(0, 0, 0, 0.552);
+    transform: translate(-3px,-3px);
+}
+/* @keyframes hei{
+    0%{
+        transform:translateY(0px)
+    }
+    30%{
+        transform:translateY(-4px)
+    }
+    50%{
+        transform:translateY(-2px)
+    }
+    60%{
+        transform:translateY(2px)
+    }
+    70%{
+        transform: translateY(6px);
+        padding-bottom: 1.25em;
+    }
+    80%{
+        transform: translateY(10px), scaleY(.75);
+        padding-bottom: 1.4em;
+    }
+    90%{
+        transform: translateY(5px);
+        padding-bottom: 1.25em;
+    }
+    100%{
+        transform: translateY(2px);
+        padding-bottom: 1em;
+    }
+} */
+    .hide{
+    transform: scaleY(0);
+    margin: auto;
+    display: block;
+    width: max-content;
+    padding: 0.5em;
+    border-top: 0px;
+    padding-top: 0;
+    transition: transform ease-in-out .3s;
+    transform-origin: top;
+
+}
+.show{
+    transform: scaleY(1);
+}
+p,input{
+    color:black;
+    margin:.5em auto;
+    display: block;
+    text-align: center;
+}
+#search{
+    margin-block-start: 2em;
+}
+input{
+    padding: 0.75em;
+    border: 4px solid rgba(0, 149, 255, 0.8);
+    border-radius: 50px;
+    width: 30%;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: rgba(0, 104, 179, 0.8);
+    font-weight: 600;
+    font-family: cursive;
+    letter-spacing: 1.5px;
+}
+input:focus{
+    background-color: rgba(0, 149, 255, 0.69);
+    color: white;
+    border-color:rgba(0, 149, 255, 0.69);
+    outline: 0;
+}
+#result{
+   background-color: bisque; 
+   margin: auto;
+   padding: 1em;
+}
+#result>p{
+    padding: .25em;
+}
